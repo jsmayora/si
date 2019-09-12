@@ -18,18 +18,18 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
     <!-- Caja contenedora de todo el sistema -->
     <div class="wrapper ">
         <!-- Menu izquierdo del sistema -->
-        <?php include RUTA_SISTEMA . 'inc/menu_left.php'; ?>
+        <?php include RUTA_SISTEMA . 'vista/menu_left/menu_left.php'; ?>
         <!-- Fin del Menu izquierdo del sistema -->
         <!-- Cuerpo del sistema panel-admin"cuerpo_pagina.php" -->
         <!-- Barra superior del sistema -->
-        <?php include RUTA_SISTEMA . 'inc/barra_top.php' ?>
+        <?php include RUTA_SISTEMA . 'vista/encabezado/barra_top.php'; ?>
         <!-- Fin barra superior del sistema -->
 
         <!-- Contenido del sistema -->
-        <?php include RUTA_SISTEMA . 'inc/cuerpo_pagina.php'; ?>
+        <?php include RUTA_SISTEMA . 'vista/inicio/cuerpo_inicio.php'; ?>
         <!-- fin del contenido del sistema -->
         <!--  Pie de la pagina -->
-        <?php  include RUTA_SISTEMA . 'inc/pie_pagina.php';?>
+        <?php  include RUTA_SISTEMA . 'vista/footer/pie_pagina.php';?>
     </div>
     <!-- Fin del cuerpo de la panel admin del sistema -->
 </div>

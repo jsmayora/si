@@ -8,10 +8,10 @@ $servidor = "http://localhost";
 
 #######################################################
 #  CONFIGURACIÓN PARA SISTEMAS WINDOWS                #
-#  $sistema = "html/pnl-admin-material-dashboard-pro";#
+  $sistema = "html/si";#
 #                                                     #
 #  CONFIGURACIÓN PARA SISTEMAS LINUX                  #
-$sistema = "si";        #
+#$sistema = "si";        #
 #######################################################
 $nombre_sistema = "Sistema de Inventario";
 
