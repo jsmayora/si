@@ -11,9 +11,9 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
 <body class="">
     <!-- Extra details for Live View on GitHub Pages -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript>
+   <!--  <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
+    </noscript> -->
     <!-- End Google Tag Manager (noscript) -->
     <!-- Caja contenedora de todo el sistema -->
     <div class="wrapper ">
@@ -25,12 +25,12 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
         <?php include RUTA_SISTEMA . 'vista/encabezado/barra_top.php'; ?>
         <!-- Fin barra superior del sistema -->
         <!-- Contenido del sistema -->
-        <?php  include RUTA_SISTEMA . 'vista/inicio/cuerpoInicio.php'; ?>
+        <?php // include RUTA_SISTEMA . 'vista/inicio/cuerpoInicio.php'; ?>
         <!-- fin del contenido del sistema -->
         <!-- Prueba -->
         <?php // include RUTA_SISTEMA . 'vista/cuerpo_plantilla/cuerpoPlantilla.php'; ?>
         <!--  Pie de la pagina -->
-        <?php include RUTA_SISTEMA . 'vista/footer/pie_pagina.php';?>
+        <?php include RUTA_SISTEMA . 'vista/usuario/cuerpoConfiguracionPerfil.php';?>
     </div>
     <!-- Fin del cuerpo de la panel admin del sistema -->
 </div>

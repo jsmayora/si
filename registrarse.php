@@ -54,6 +54,10 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
 
                       <div class="text-center">
                         <a href="#pablo" class="btn btn-primary btn-round mt-4">Registrarse</a>
+
+                      </div>
+                      <div class="text-center">
+                        <a href="index.php" class="btn btn-primary btn-round ">ir al login</a>
                       </div>
                     </form>
                   </div>

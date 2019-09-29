@@ -25,7 +25,7 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
         <?php include RUTA_SISTEMA . 'vista/encabezado/barra_top.php'; ?>
         <!-- Fin barra superior del sistema -->
         <!-- Contenido del sistema -->
-        <?php  include RUTA_SISTEMA . 'vista/inicio/cuerpoInicio.php'; ?>
+        <?php  include RUTA_SISTEMA . 'vista/cargarRecursos/cuerpoCargarRecursos.php'; ?>
         <!-- fin del contenido del sistema -->
         <!-- Prueba -->
         <?php // include RUTA_SISTEMA . 'vista/cuerpo_plantilla/cuerpoPlantilla.php'; ?>

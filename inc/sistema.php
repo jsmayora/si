@@ -18,19 +18,18 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
     <!-- Caja contenedora de todo el sistema -->
     <div class="wrapper ">
         <!-- Menu izquierdo del sistema -->
-        <?php include RUTA_SISTEMA . 'vista/menu_left/menu_left.php'; ?>
+        <?php include RUTA_SISTEMA . 'inc/menu_left.php'; ?>
         <!-- Fin del Menu izquierdo del sistema -->
         <!-- Cuerpo del sistema panel-admin"cuerpo_pagina.php" -->
         <!-- Barra superior del sistema -->
-        <?php include RUTA_SISTEMA . 'vista/encabezado/barra_top.php'; ?>
+        <?php include RUTA_SISTEMA . 'inc/barra_top.php' ?>
         <!-- Fin barra superior del sistema -->
+
         <!-- Contenido del sistema -->
-        <?php  include RUTA_SISTEMA . 'vista/inicio/cuerpoInicio.php'; ?>
+        <?php include RUTA_SISTEMA . 'inc/cuerpo_pagina.php'; ?>
         <!-- fin del contenido del sistema -->
-        <!-- Prueba -->
-        <?php // include RUTA_SISTEMA . 'vista/cuerpo_plantilla/cuerpoPlantilla.php'; ?>
         <!--  Pie de la pagina -->
-        <?php include RUTA_SISTEMA . 'vista/footer/pie_pagina.php';?>
+        <?php  include RUTA_SISTEMA . 'inc/pie_pagina.php';?>
     </div>
     <!-- Fin del cuerpo de la panel admin del sistema -->
 </div>
@@ -42,7 +41,6 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
 
 <!-- Archivos javascript del sistema  -->
 <?php include RUTA_SISTEMA . 'inc/footer_sistema.php';?>
-<!-- este script contiene los eventos del menu izquierdo del sistema -->
-<script type="text/javascript"  src="<?php echo $servidor.DS
-.$sistema;?>/js/sidebar.js"></script>
+ <!-- este script contiene los eventos del menu izquierdo del sistema -->
+<script type="text/javascript"  src="<?php echo $servidor.DS.$sistema;?>/js/sidebar.js"></script>
 </html>

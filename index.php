@@ -49,8 +49,8 @@ include RUTA_SISTEMA . 'inc/header_sistema.php';
                                         </span>
                                     </div>
                                     <div class="card-footer justify-content-center">
-                                        <a href="#pablo" class="btn btn-rose btn-link btn-lg">Entrar</a>
-                                        <a href="#pablo" class="btn btn-rose btn-link btn-lg">Registrarse</a>
+                                        <a href="vista/inicio.php" class="btn btn-rose btn-link btn-lg">Entrar</a>
+                                        <a href="registrarse.php" class="btn btn-rose btn-link btn-lg">Registrarse</a>
                                     </div>
 
                                 </div>

@@ -1,14 +1,15 @@
 -- crear tbls  --
+-- listo
 CREATE TABLE schema_inventario.tbl_tipos_musicas (
     id_tipo_musica serial NOT NULL,
     nombre_tipo_musica character varying(20) NOT NULL,
     CONSTRAINT un_nombre_tipo_musica UNIQUE (nombre_tipo_musica),
     CONSTRAINT pk_id_tipo_musica_1 PRIMARY KEY (id_tipo_musica)
 );
-
+-- listo
 CREATE TABLE schema_inventario.tbl_disqueras_cds (
     id_disquera_cd serial NOT NULL,
-    nombre_compa ia character varying(60) DEFAULT 'Independiente' NOT NULL,
+    nombre_compania character varying(60) DEFAULT 'Independiente' NOT NULL,
     CONSTRAINT pk_id_disquera_cd PRIMARY KEY (id_disquera_cd)
 );
 
@@ -31,6 +32,7 @@ CREATE TABLE schema_inventario.tbl_tipos_discos_compactos (
     CONSTRAINT fk_id_tipo_musica_1 FOREIGN KEY (id_tipo_musica) REFERENCES schema_inventario.tbl_tipos_musicas
 );
 
+-- listo
 CREATE TABLE schema_inventario.tbl_artistas (
     id_artista serial NOT NULL,
     nombre_artista character varying(60) NOT NULL,
@@ -424,3 +426,86 @@ INSERT INTO schema_inventario.tbl_cds_artistas
 INSERT INTO schema_inventario.tbl_cds_artistas
     VALUES (2018, 115);
 
+
+
+
+-- modulo de usuarios "schema_usuarios"
+
+
+CREATE TABLE schema_usuarios.tbl_perfiles
+(
+    id_perfil bigint NOT NULL,
+    perfil character(120) NOT NULL,
+    CONSTRAINT pk_tbl_perfiles_id_perfil PRIMARY KEY (id_perfil)
+)
+
+
+CREATE TABLE schema_usuarios.tbl_modulos
+(
+    id_modulo integer NOT NULL,
+    modulo character(80) NOT NULL,
+    descripcion_modulo text NOT NULL,
+    CONSTRAINT pk_tbl_modulos_id_modulo PRIMARY KEY (id_modulo)
+ )
+
+
+ CREATE TABLE schema_usuarios.tbl_modulos_perfiles
+(
+    id_modulo_perfil bigint NOT NULL,
+    id_modulo integer,
+    id_perfil integer,
+    CONSTRAINT pk_id_modulo_pefil PRIMARY KEY (id_modulo_perfil),
+    CONSTRAINT fk_modulo_id_modulo FOREIGN KEY (id_modulo)
+        REFERENCES schema_usuarios.tbl_modulos (id_modulo) MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    CONSTRAINT fk_modulo_id_perfil FOREIGN KEY (id_perfil)
+        REFERENCES schema_usuarios.tbl_perfiles (id_perfil) MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
+)
+
+CREATE TABLE schema_usuarios.tbl_sub_modulos
+(
+    id_sub_modulo bigint NOT NULL,
+    sub_modulo text ,
+    id_modulo integer,
+    posicion_sub_modulo integer,
+    descripcion_sub_modulo text ,
+    enlace text ,
+    CONSTRAINT pk_tbl_sub_modulos_id_sub_modulo PRIMARY KEY (id_sub_modulo),
+    CONSTRAINT fk_tbl_sub_modulos_id_modulo FOREIGN KEY (id_modulo)
+        REFERENCES schema_usuarios.tbl_modulos (id_modulo) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+
+CREATE TABLE schema_usuarios.tbl_estatus_usuarios
+(
+    id_estatu_usuario bigint NOT NULL ,
+    estatu_usuario character(80),
+    CONSTRAINT pk_tbl_estatus_usarios_id_estatu_usuario PRIMARY KEY (id_estatu_usuario)
+)
+
+
+
+CREATE TABLE schema_usuarios.tbl_usuarios
+(
+    cedula character(12) ,
+    nombres character(80) ,
+    apellidos character(80) ,
+    correo_electronico character(80) ,
+    usuario character(30) ,
+    clave character(15) ,
+    id_estatu_usuario integer,
+    id_perfil integer,
+       CONSTRAINT fk_id_perfil FOREIGN KEY (id_perfil)
+        REFERENCES schema_usuarios.tbl_perfiles (id_perfil) MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+        CONSTRAINT fk_tbl_usuarios_id_estatu_usuario FOREIGN KEY (id_estatu_usuario)
+        REFERENCES schema_usuarios.tbl_estatus_usuarios (id_estatu_usuario) MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
+)

@@ -3,12 +3,12 @@
 //header('Content-type: text/html; charset=utf-8');
 define('DS', DIRECTORY_SEPARATOR);
 
-$servidor = "http://localhost";
-//$servidor = "http://sistemve.com";
+// $servidor = "http://localhost";
+$servidor = "http://sistemve.com";
 
 #######################################################
 #  CONFIGURACIÓN PARA SISTEMAS WINDOWS                #
-  $sistema = "html/si";#
+  $sistema = "si";#
 #                                                     #
 #  CONFIGURACIÓN PARA SISTEMAS LINUX                  #
 #$sistema = "si";        #
