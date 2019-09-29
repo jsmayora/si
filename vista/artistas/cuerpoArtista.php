@@ -38,7 +38,7 @@
 
                     <div class="row">
 
-                        <div class="col-md-6 col-md-6 ml-auto mr-auto">
+                        <div class=" col-md-6 ml-auto mr-auto">
                             <div class="form-group">
                                 <label class="bmd-label-floating">Nombres</label>
                                 <input type="text" class="form-control">
@@ -57,8 +57,6 @@
                         </div>
                     </div>
 
-
-
                     <button type="submit" class="btn btn-rose pull-right">Update Profile</button>
                     <div class="clearfix"></div>
                 </form>
@@ -66,25 +64,6 @@
         </div>
     </div>
 
-
-
-
-
-    <!-- fila 1 -->
-    <?php //  include 'filasPlantilla/filaUno.php'; ?>
-    <!-- fila 1 -->
-    <!-- Fila 2 -->
-    <?php  // include 'filasPlantilla/filaDos.php'; ?>
-    <!-- Fila 2 -->
-    <!-- Fila 3 -->
-    <?php  // include 'filasPlantilla/filaTres.php'; ?>
-    <!-- Fila 3 -->
-    <!-- espacio -->
-    <!-- Fila 4 -->
-    <!-- <h3>Manage Listings</h3> -->
-    <!-- <br> -->
-    <?php //  include 'filasPlantilla/filaCuatro.php'; ?>
-    <!-- fin Fila 4 -->
 </div>
 </div>
 </div>

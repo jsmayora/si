@@ -13,9 +13,9 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="../examples/pages/timeline.html">
-                <span class="sidebar-mini"> T </span>
-                <span class="sidebar-normal"> Timeline </span>
+            <a class="nav-link" href="htmlCdsArtistas.php">
+                <span class="sidebar-mini"> CDA</span>
+                <span class="sidebar-normal"> CDs Artistas </span>
             </a>
         </li>
         <li class="nav-item ">
