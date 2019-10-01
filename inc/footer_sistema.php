@@ -83,3 +83,12 @@
  <!-- Material Dashboard DEMO metho"/"
     , don't include it in your project! -->
     <script type="text/javascript" src="<?php echo $servidor."/".$sistema;?>/assets/demo/demo.js"></script>
+
+
+<!-- script que activa la tbl con efectos  -->
+<script type="text/javascript" src="<?php echo $servidor."/".$sistema;?>/js/tblCdsArtistas.js"></script>
+
+
+<!-- este script contiene los eventos del menu izquierdo del sistema -->
+<script type="text/javascript"  src="<?php echo $servidor."/"
+.$sistema;?>/js/sidebar.js"></script>

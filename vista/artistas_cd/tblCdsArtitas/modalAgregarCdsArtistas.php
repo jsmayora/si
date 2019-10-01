@@ -1,125 +1,57 @@
-<button class="btn btn-round" data-toggle="modal" data-target="#signupModal">
-  <i class="material-icons">assignment</i>
-  SignUp
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+ Nuevo <i class="material-icons">persont</i>
+
 </button>
 
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog " role="document">
-    <!-- modal-signup -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="card card-signup card-plain">
-        <div class="modal-header">
-          <h5 class="modal-title card-title">CD Artistas</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="material-icons">clear</i>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CDs Artistas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
 
-            <div class="col-md-12 ml-auto mr-auto">
-              <form class="form" method="" action="">
-                <div class="card-body">
-
-                  <div class="form-group select-wizar ">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="material-icons">person</i>
-                        </div>
-
-                      </div>
-                      <select class="selectpicker" data-size="7" data-style="select-with-transition" title="seleccione el Artista">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="material-icons">email</i></div>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Titulo del Disco">
-                    </div>
-                  </div>
-
-                  <div class="form-group select-wizar ">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="material-icons">person</i>
-                        </div>
-                      </div>
-                      <select class="selectpicker" data-size="7" data-style="select-with-transition" title="Disquera">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group select-wizar ">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="material-icons">person</i>
-                        </div>
-                      </div>
-                      <select class="selectpicker" data-size="7" data-style="select-with-transition" title="En Existencia">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="material-icons">email</i></div>
-                      </div>
-                      <input type="text" class="form-control" placeholder="En Existencia">
-                    </div>
-                  </div>
+        <form>
 
 
-
-                  <div class="form-group select-wizar ">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="material-icons">person</i>
-                        </div>
-
-                      </div>
-                      <select class="selectpicker" data-size="7" data-style="select-with-transition" title="tipo de Musica">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-
-                      </select>
-
-
-
-                    </div>
-                  </div>
-
-                 <!--  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox" value="" checked>
-                      <span class="form-check-sign">
-                        <span class="check"></span>
-                      </span>
-                      I agree to the <a href="#something">terms and conditions</a>.
-                    </label>
-                  </div> -->
-                </div>
-                <div class="modal-footer justify-content-center">
-                  <a href="#pablo" class="btn btn-primary btn-round">Enviar</a>
-                </div>
-              </form>
-            </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Seleccione Artista</label>
+            <select class="form-control selectpicker" data-style="btn btn-link" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
           </div>
-        </div>
+
+
+
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" >
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
