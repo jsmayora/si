@@ -23,7 +23,7 @@
                         </div>
                         <div class="row">
 
-                            <div class="col-md-12">
+                            <div class="col-md-9 ml-auto mr-auto">
                                 <?php include 'artistas/tblArtistas/tblArtistas.php'; ?>
                             </div>
                         </div>

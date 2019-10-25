@@ -6,7 +6,7 @@
     <!-- <h4 class="card-title">Simple Table</h4> -->
   </div>
   <div class="card-body">
-    <div class="table-responsive">
+    <div class="table-responsive table-striped table-no-bordered table-hover" cellspacing="0">
       <table class="table">
         <thead>
           <tr>

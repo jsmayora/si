@@ -8,7 +8,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Nuevo Artista</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -38,16 +38,23 @@
             </div>
           </div>
 
+          <!-- <button type="button" class="btn  push-left" data-dismiss="modal">cerrar</button>
           <button type="submit" class="btn btn-rose pull-right">Enviar</button>
-          <div class="clearfix"></div>
+          <div class="clearfix"></div> -->
         </form>
 
 
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+      <div class="modal-footer ">
+        <!-- justify-content-center -->
+
+            <button type="button" class="btn btn-secondary push-left" data-dismiss="modal">Cerrar</button>
+
+
+            <button type="button" class="btn btn-primary pull-right">Guardar</button>
+
       </div>
     </div>
   </div>

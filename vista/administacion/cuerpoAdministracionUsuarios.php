@@ -2,21 +2,39 @@
 <div class="content">
     <div class="content">
         <div class="container-fluid">
-            <!-- fila 1 -->
-            <?php //  include 'filasPlantilla/filaUno.php'; ?>
-            <!-- fila 1 -->
-            <!-- Fila 2 -->
-            <?php  // include 'filasPlantilla/filaDos.php'; ?>
-            <!-- Fila 2 -->
-            <!-- Fila 3 -->
-            <?php  // include 'filasPlantilla/filaTres.php'; ?>
-            <!-- Fila 3 -->
-            <!-- espacio -->
-            <!-- Fila 4 -->
-            <!-- <h3>Manage Listings</h3> -->
-            <br>
-            <?php //  include 'filasPlantilla/filaCuatro.php'; ?>
-            <!-- fin Fila 4 -->
+
+            <div class="row">
+             <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-icon card-header-rose">
+                        <div class="card-icon">
+                            <i class="material-icons">perm_identity</i>
+                        </div>
+                        <h4 class="card-title">Registrar Usuarios -
+                            <small class="category">Complete los campos</small>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-md-2">
+
+                                <?php include 'administracion_usuarios/modalAdminUsuario.php'; ?>
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <?php include 'administracion_usuarios/tbl_usuarios.php'; ?>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>
